@@ -41,7 +41,9 @@
 
 ## Units
 ### Intro to Computer Science
+
  - reflective writeup
+
 ### Intro to Keyboarding
  - keyboarding project in class
 
@@ -59,13 +61,16 @@
  - end of unit quiz
  
 ### Intro to Algorithms
+
  - Google hour of code
  - end of unit quiz
 ### Run time analysis of Algorithms
+
  - Big O
  - end of unit quiz
 
 ### Famous computer scientists
+
  - Presentation of findings
 
 ---
