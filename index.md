@@ -1,4 +1,7 @@
-(setq markdown-css-paths '("https://saintjohnsnorthwesternmilitaryacademy.github.io/style.css"))
+---
+---
+
+@import "{{ site.theme }}";
 
 # Classroom_Ground_Rules
 - All rules of this academy and academic building exist as part of this classroom 
