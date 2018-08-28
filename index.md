@@ -9,14 +9,19 @@
 - Participate in classroom activities
 - Raise your hand for questions and answers
 - Appropriate usage of the internet and computer is expected. Off topic internet and computer usage is not acceptable.
-- No food/(non-water) beverage is permitted in the computer lab
+- No food/(non-water) beverage is permitted 
 - Don't be afraid to help eachother! 
-- Late submissions are accepted but at 50% credit. Submit your work early & often, no penalty for early/partial submissions
-- Push yourself to finish work early - coding takes longer than you think, and you might need that time.
+- Late submissions are accepted but at 50% credit. Submit your work early & often, no penalty for early submissions & edits before the due date
  
 # Tools
-- [VS Code](https://github.com/facedesk/facedesk.github.io/raw/master/putty.exe)
-- [Python](https://github.com/facedesk/facedesk.github.io/raw/master/putty.exe)
+- [VS Code](https://code.visualstudio.com/docs/?dv=win)
+- [Python](https://code.visualstudio.com/docs/?dv=win)
+
+
+
+- Ubuntu server(Ask Mr. Gold for credentials): 
+-- wireless 192.168.7.205 
+-- wired 172.17.23.19
 
 
 
