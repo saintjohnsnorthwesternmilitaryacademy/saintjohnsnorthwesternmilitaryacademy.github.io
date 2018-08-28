@@ -40,8 +40,8 @@
     -  raise this grade by meeting the project requirements and giving your best
 
 ## Units
-### Intro to Computer Science
 
+### Intro to Computational thinking
  - reflective writeup
 
 ### Intro to Keyboarding
