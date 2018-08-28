@@ -15,7 +15,6 @@
 
 
 
-
 # Tools
 - [VS Code](https://code.visualstudio.com/docs/?dv=win)
 - [git (windows only)](https://git-scm.com/)
@@ -27,7 +26,7 @@
 -- wireless 192.168.7.205 
 -- wired 172.17.23.19
 
-
+---------
 
 # computer_fundamentals_1
 ## Grading breakdown
@@ -67,8 +66,8 @@
 ### Famous computer scientists
  - Presentation of findings
 
----
----
+------
+
 # computer_fundamentals_2
 
 ## Grading breakdown
@@ -169,6 +168,7 @@
 ### Advanced Javascript Frameworks
  - TBD
 
+------
 
 # programming_1
 
@@ -194,6 +194,7 @@
 - Intro to Git & Github
 - Git commands
 - Creating your reflection repository
+- Quiz
 
 ### Markdown
  - Editing a file using Pico
@@ -245,7 +246,14 @@
  - Creating a simple class
  - Philosophy of Object Oriented Programming
 
+
+------
+
+
 # Programming_2
+
+changes incoming!
+
 
 ### download .net Core SDK
 - https://github.com/dotnet/core-setup#daily-builds
