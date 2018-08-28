@@ -1,6 +1,3 @@
-
----
-
 @import "{{ site.theme }}";
 
 # Classroom_Ground_Rules
