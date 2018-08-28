@@ -18,8 +18,7 @@
 
 # Tools
 - [VS Code](https://code.visualstudio.com/docs/?dv=win)
-- [git(windows only)] (https://git-scm.com/)
-
+- [git (windows only)](https://git-scm.com/)
 - [Python](https://www.python.org/downloads/)
 
 
