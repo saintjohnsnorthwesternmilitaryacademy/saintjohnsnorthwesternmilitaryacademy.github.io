@@ -1,3 +1,5 @@
+
+
 # Classroom_Ground_Rules
 - All rules of this academy and academic building exist as part of this classroom 
 - Come to class on time and prepared to learn
@@ -26,7 +28,7 @@
 -- wireless 192.168.7.205 
 -- wired 172.17.23.19
 
----------
+---
 
 # computer_fundamentals_1
 ## Grading breakdown
@@ -66,7 +68,7 @@
 ### Famous computer scientists
  - Presentation of findings
 
-------
+---
 
 # computer_fundamentals_2
 
@@ -168,7 +170,7 @@
 ### Advanced Javascript Frameworks
  - TBD
 
-------
+---
 
 # programming_1
 
@@ -247,7 +249,7 @@
  - Philosophy of Object Oriented Programming
 
 
-------
+---
 
 
 # Programming_2
