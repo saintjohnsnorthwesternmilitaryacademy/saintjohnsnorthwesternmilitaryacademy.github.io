@@ -1,4 +1,9 @@
-
+(setq markdown-xhtml-header-content
+"<style type='text/css'>
+@media print {
+hr {page-break-after: always;}
+}
+</style>")
 
 # Classroom_Ground_Rules
 - All rules of this academy and academic building exist as part of this classroom 
