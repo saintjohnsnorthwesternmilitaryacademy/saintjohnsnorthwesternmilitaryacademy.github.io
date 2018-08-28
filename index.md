@@ -12,7 +12,10 @@
 - No food/(non-water) beverage is permitted 
 - Don't be afraid to help eachother! 
 - Late submissions are accepted but at 50% credit. Submit your work early & often, no penalty for early submissions & edits before the due date
- 
+
+
+
+
 # Tools
 - [VS Code](https://code.visualstudio.com/docs/?dv=win)
 - [Python](https://code.visualstudio.com/docs/?dv=win)
@@ -25,7 +28,56 @@
 
 
 
+# computer_fundamentals_1
+## Grading breakdown
+- 50% participation graded weekly
+    - raise this grade by being proactive in the classroom and prepared to share your ideas every day
+- 25% quizzes
+    - raise this grade by studying, and showing up for tutorial
+- 25% projects
+    -  raise this grade by meeting the project requirements and giving your best
+
+## Units
+### Intro to Computer Science
+ - reflective writeup
+### Intro to Keyboarding
+ - keyboarding project in class
+
+### Google Suite
+ - google slides project
+ - google docs project
+ - google sheets project
+
+###  Computer Hardware
+ - computer building project
+ - end of unit quiz
+
+### Logic & Circuits: A deeper dive into Computer Hardware
+ - Cardboard Calculator
+ - end of unit quiz
+ 
+### Intro to Algorithms
+ - Google hour of code
+ - end of unit quiz
+### Run time analysis of Algorithms
+ - Big O
+ - end of unit quiz
+
+### Famous computer scientists
+ - Presentation of findings
+
+---
+---
 # computer_fundamentals_2
+
+## Grading breakdown
+- 20% reflections graded weekly
+    - raise this grade by providing insightful reflections 
+- 40% quizzes
+    - raise this grade by studying, and showing up for tutorial
+- 40% projects
+    -  raise this grade by meeting the project requirements and giving your best
+
 
 ## Units
 
@@ -118,6 +170,15 @@
 
 
 # programming_1
+
+## Grading breakdown
+- 20% reflections graded weekly
+    - raise this grade by providing insightful reflections 
+- 40% quizzes
+    - raise this grade by studying, and showing up for tutorial
+- 40% projects
+    -  raise this grade by meeting the project requirements and giving your best
+
 
 ## Units
 ### Introductions, theory of coding
