@@ -1,10 +1,13 @@
 body{
     background-color : #3F0077;
     color: #C41E3A;
-
 }
 
 
+
+@media print {
+    hr {page-break-after: always;}
+}/*for printing purposes*/
 
 /* font is Consort Bold Condensed (Red Rooster).
 
