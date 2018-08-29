@@ -2,6 +2,7 @@
 
 # Classroom_Ground_Rules
 - All rules of this academy and academic building exist as part of this classroom 
+- ### Listen to directions
 - Come to class on time and prepared to learn
 - Apply the three R’s
     - Respect yourself
