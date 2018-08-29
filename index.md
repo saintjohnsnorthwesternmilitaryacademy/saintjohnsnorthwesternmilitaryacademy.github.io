@@ -202,7 +202,7 @@
 - Intro to Git & Github
 - Git commands
 - Creating your reflection repository
-- Quiz
+
 
 ### Markdown
  - Editing a file using Pico
