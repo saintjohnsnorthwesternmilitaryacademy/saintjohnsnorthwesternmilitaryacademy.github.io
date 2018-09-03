@@ -183,9 +183,9 @@
 ## Grading breakdown
 - 20% reflections graded weekly
     - raise this grade by providing insightful reflections 
-- 40% quizzes
+- 60% quizzes
     - raise this grade by studying, and showing up for tutorial
-- 40% projects
+- 20% projects
     -  raise this grade by meeting the project requirements and giving your best
 
 
