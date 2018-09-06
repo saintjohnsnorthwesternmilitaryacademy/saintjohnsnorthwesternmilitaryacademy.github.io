@@ -20,6 +20,10 @@
 
 # Tools
 - [VS Code](https://code.visualstudio.com/docs/?dv=win)
+    - [windows] (https://github.com/saintjohnsnorthwesternmilitaryacademy/saintjohnsnorthwesternmilitaryacademy.github.io/raw/master/files/VSCode_windows10.exe)
+    - [mac](https://github.com/saintjohnsnorthwesternmilitaryacademy/saintjohnsnorthwesternmilitaryacademy.github.io/raw/master/files/VSCode-darwin.zip)
+    - [linux](https://github.com/saintjohnsnorthwesternmilitaryacademy/saintjohnsnorthwesternmilitaryacademy.github.io/raw/master/files/VSCode_ubuntu.deb)
+
 - [git (windows only)](https://git-scm.com/)
 - [Python](https://www.python.org/downloads/)
 
