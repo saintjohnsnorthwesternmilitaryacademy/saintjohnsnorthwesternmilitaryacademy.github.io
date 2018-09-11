@@ -15,6 +15,12 @@ $( "body" ).keypress(function( event ) {
   }
   else if (event.which == 13){
   		$("#typed").text(typed);
+        var missed = levenshteinDistance(secret,typed);
+        var hit = secret.length - missed;
+        var percent = hit / secret.length;
+        $("#missed").text("missed="+missed);
+        $("#hit").text("hit="+hit);
+        $("#percent").text("percent="+percent);
         
   }
   
