@@ -1,4 +1,28 @@
 
+var secret = "the quick brown fox jumped over the fence"
+var typed;
+$( document ).ready(function() {
+    typed = "";
+    $("#lesson").text(secret);
+});
+$( "body" ).keypress(function( event ) {
+  if ((event.which >= 65 && event.which <= 90) ||
+      (event.which >= 97 && event.which <= 122) ||
+      (event.which >= 48 && event.which <= 57) ||
+      (event.which == 32)){		
+      typed = typed + String.fromCharCode(event.which);
+      
+  }
+  else if (event.which == 13){
+  		$("#typed").text(typed);
+        
+  }
+  
+  if ( event.which == 13 ) {
+     event.preventDefault();
+  }
+});
+
 
 function levenshteinDistance (s, t) {
     if (!s.length) return t.length;
@@ -10,3 +34,4 @@ function levenshteinDistance (s, t) {
         levenshteinDistance(s.substr(1), t.substr(1)) + (s[0] !== t[0] ? 1 : 0)
     ) + 1;
 }
+
