@@ -4,6 +4,7 @@ var typed;
 $( document ).ready(function() {
     typed = "";
     $("#lesson").text(secret);
+    alert("new");
 });
 $( "body" ).keypress(function( event ) {
   if ((event.which >= 65 && event.which <= 90) ||
