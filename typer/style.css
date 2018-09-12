@@ -4,14 +4,23 @@ a{
 }
 body{
     text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding:20px;
 }
 .codes{
     text-align:left;
+    
+}
+h6{
+
 }
 ul{
     text-align:left;
 }
 #lesson{
     border-style:solid;
-    padding:10px;
+    margin:10px;
+}
+p{
+    font-size:24px;
 }
