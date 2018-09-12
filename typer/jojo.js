@@ -1,10 +1,25 @@
 
-var secret = "the quick brown fox jumped over the fence"
+var secret = 
+[
+    "",
+    "the quick brown fox jumped over the fence",
+    
+    "aaa bbb ccc",
+
+    "test k 1"
+];
+var x = 1;
 var typed;
 $( document ).ready(function() {
-    typed = "";
-    $("#lesson").text(secret);
+    reset();
+    for(var page = 1;page<secret.length;page++)
+    {
+        $( "div" ).append("<a href=\"javascript:void(0)\" class='pages' onclick=\"page(this.id);\" id=a"+page+" >"+page+"</a>");
+    }
 });
+
+$( '.pages' ).on( 'click', function () { alert("hi")});
+
 $( "body" ).keypress(function( event ) {
   if ((event.which >= 65 && event.which <= 90) ||
       (event.which >= 97 && event.which <= 122) ||
@@ -15,24 +30,39 @@ $( "body" ).keypress(function( event ) {
   }
   else if (event.which == 13){
   		$("#typed").text(typed);
-        var missed = levenshtein(secret,typed)
+        var missed = levenshtein(secret[x],typed)
         
-        secret.length - typed.length;
+        secret[x].length - typed.length;
         
-        var hit = secret.length - missed;
-        var percent = hit / secret.length;
+        var hit = secret[x].length - missed;
+        var percent = 100*(hit / secret[x].length);
 
     
         $("#missed").text("missed="+missed);
         $("#hit").text("hit="+hit);
         $("#percent").text("percent="+percent);
-        
   }
   
   if ( event.which == 13 ) {
      event.preventDefault();
   }
 });
+function page(id)
+{
+    x = parseInt(id.substring(1, id.length),10);
+    reset();
+}
+function next()
+{
+    x = x + 1;
+    reset(); 
+}
+function reset()
+{
+    typed = "";
+    $("#lesson").text(secret[x]);
+    $("#typed").text("");
+}
 function dziemba_levenshtein(a, b){
 	var tmp;
 	if (a.length === 0) { return b.length; }
