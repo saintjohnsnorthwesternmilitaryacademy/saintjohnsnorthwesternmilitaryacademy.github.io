@@ -6,46 +6,46 @@ function p(x,y)
 var secret = 
 [
     "",
-    "the of and to a in you for or it as be on with can have this by not but ",
-"at from I they more will if some there what about which when one all also how many do most ",
-"people other time so we may like use into than up out who make because such through get work even ",
-"no new film just only see good water need should very any history often way well art know then first ",
-"would money each over world map find where much take two want important family example while he look before help ",
-"between go own however business great another health same study why few game might think free too right still system ",
-"after best must life since could now during learn around form meat air day place become number public read keep ",
-"part start year every field large once available down give fish human both local sure without come back general process ",
-"she heat specific enough long lot hand popular small though experience include job music person really although thank book early ",
-"end method never less play able data feel high off point type whether food here home certain economy little theory ",
-"tonight law put under value always body common market set bird guide provide change interest literature problem say next create ",
-"simple software state together control knowledge power radio course hard add company love past price size away big internet possible ",
-"television three understand various card difficult list mind particular real science trade consider either library likely nature fact line product ",
-"care group idea risk several temperature word fat force key light today until major name school top current left amount ",
-"level order practice research sense service area cut hot instead physical piece show society try check choose develop second tense ",
-"web boss short story call industry last media mental move pay sport thing against far fun house let page remember ",
-"term test within along answer increase oven quite single sound again community focus individual matter percent turn kind quality soil ",
-"ask board buy guard hold language main offer oil picture potential professional rather access almost garden international open range rate ",
-"reason travel variety video week above according cook determine future site alternative demand ever exercise image special case cause coast ",
-"TRUE whole age among bad boat country dance exam excuse grow movie record result section across already below mouse allow ",
-"cash class clear dry easy live period physics plan store tax cold full low old policy purchase series side subject ",
-"supply therefore basis boyfriend deal direction mean primary space strategy technology worth army camera fall paper rule similar stock weather ",
-"yet bring chance environment figure improve man mathematics model necessary positive produce search source child earth else instance maintain month ",
-"present program spend talk upset begin chicken close design feature head material medical purpose question rock salt tell university act ",
-"article birth car cost department difference dog drive essential exist federal goal green intelligence late news object scale sun support ",
-"tend thus audience enjoy entire fit glad income note perform profit proper remove rent return run speed strong style war ",
-"actual appropriate bank complex content craft due failure half inside meaning medicine middle philosophy regular reserve standard bus decide exchange ",
-"eye fast fire identify independent leave original position pressure reach rest serve stress watch wide advantage benefit box charge complete ",
-"continue frame issue night protect require significant step unless active break chemistry cycle disease energy face item metal nation negative ",
-"occur paint pregnant review road role room safe screen soup stay structure view visit visual write wrong account affect ago ",
-"approach avoid ball behind cover discipline medium prepare quick ready report rise share apartment balance bit black bottom build choice ",
-"gift impact machine moment shape straight tool walk white wind achieve address average believe beyond career culture decision direct event ",
-"excellent extra junior morning pick poor pot pretty property receive seem sign student table task unique wood classic competition condition ",
-"contact credit discuss egg final happy hope ice lift mix network north office overall population president private realize responsible separate ",
-"square stop teach unit western yes alone attempt category cigarette concern contain context cute date effect familiar fly follow link ",
-"official opportunity perfect post recent refer solve star toward voice bright broad capital challenge describe despite flat flight friend gain ",
-"length magazine maybe newspaper nice prefer prevent rich save self soon stand warm young ahead beauty brush cell couple debate ",
-"discover ensure exit expect fail front function heavy invest lack lake lead listen member message plant plastic reduce scene serious ",
-"speak spot summer taste theme track wing worry appear brain button click concept correct customer death desire explain explore express ",
-"foot gas handle huge influence involve lose meet mood notice rain rare release sell slow technical typical upon wall woman ",
+    "the of and to a in you for or it as be on with can have this by not but",
+"at from I they more will if some there what about which when one all also how many do most",
+"people other time so we may like use into than up out who make because such through get work even",
+"no new film just only see good water need should very any history often way well art know then first",
+"would money each over world map find where much take two want important family example while he look before help",
+"between go own however business great another health same study why few game might think free too right still system",
+"after best must life since could now during learn around form meat air day place become number public read keep",
+"part start year every field large once available down give fish human both local sure without come back general process",
+"she heat specific enough long lot hand popular small though experience include job music person really although thank book early",
+"end method never less play able data feel high off point type whether food here home certain economy little theory",
+"tonight law put under value always body common market set bird guide provide change interest literature problem say next create",
+"simple software state together control knowledge power radio course hard add company love past price size away big internet possible",
+"television three understand various card difficult list mind particular real science trade consider either library likely nature fact line product",
+"care group idea risk several temperature word fat force key light today until major name school top current left amount",
+"level order practice research sense service area cut hot instead physical piece show society try check choose develop second tense",
+"web boss short story call industry last media mental move pay sport thing against far fun house let page remember",
+"term test within along answer increase oven quite single sound again community focus individual matter percent turn kind quality soil",
+"ask board buy guard hold language main offer oil picture potential professional rather access almost garden international open range rate",
+"reason travel variety video week above according cook determine future site alternative demand ever exercise image special case cause coast",
+"TRUE whole age among bad boat country dance exam excuse grow movie record result section across already below mouse allow",
+"cash class clear dry easy live period physics plan store tax cold full low old policy purchase series side subject",
+"supply therefore basis boyfriend deal direction mean primary space strategy technology worth army camera fall paper rule similar stock weather",
+"yet bring chance environment figure improve man mathematics model necessary positive produce search source child earth else instance maintain month",
+"present program spend talk upset begin chicken close design feature head material medical purpose question rock salt tell university act",
+"article birth car cost department difference dog drive essential exist federal goal green intelligence late news object scale sun support",
+"tend thus audience enjoy entire fit glad income note perform profit proper remove rent return run speed strong style war",
+"actual appropriate bank complex content craft due failure half inside meaning medicine middle philosophy regular reserve standard bus decide exchange",
+"eye fast fire identify independent leave original position pressure reach rest serve stress watch wide advantage benefit box charge complete",
+"continue frame issue night protect require significant step unless active break chemistry cycle disease energy face item metal nation negative",
+"occur paint pregnant review road role room safe screen soup stay structure view visit visual write wrong account affect ago",
+"approach avoid ball behind cover discipline medium prepare quick ready report rise share apartment balance bit black bottom build choice",
+"gift impact machine moment shape straight tool walk white wind achieve address average believe beyond career culture decision direct event",
+"excellent extra junior morning pick poor pot pretty property receive seem sign student table task unique wood classic competition condition",
+"contact credit discuss egg final happy hope ice lift mix network north office overall population president private realize responsible separate",
+"square stop teach unit western yes alone attempt category cigarette concern contain context cute date effect familiar fly follow link",
+"official opportunity perfect post recent refer solve star toward voice bright broad capital challenge describe despite flat flight friend gain",
+"length magazine maybe newspaper nice prefer prevent rich save self soon stand warm young ahead beauty brush cell couple debate",
+"discover ensure exit expect fail front function heavy invest lack lake lead listen member message plant plastic reduce scene serious",
+"speak spot summer taste theme track wing worry appear brain button click concept correct customer death desire explain explore express",
+"foot gas handle huge influence involve lose meet mood notice rain rare release sell slow technical typical upon wall woman",
 ];
 var x = 1;
 var t=100;
@@ -709,7 +709,8 @@ function setup()
 {
 
     $('body').append('<div id ="links"></div>');
-    $('body').append('<p id="lesson"></p>');
+    
+    $('body').append('<p class = "jumbotron" id="lesson"></p>');
     $('body').append('<hr>');
     $('body').append('<p id="typed"></p>');
     $('body').append('<hr>');
@@ -723,7 +724,7 @@ function setup()
     
     $('body').append('<button onclick="next()">next</button>');
     $('body').append('<button onclick="reset()">redo</button>');
-    $('body').prepend('<h6>Type the text below and press enter when done. The screen will not change until you press enter. When you have 100% accuracy, you will receive a unit passed code below. Save that code and send all codes to your instructor when you have completed all lessons</h6>');
+    $('body').prepend('<h6><i>Hint:</i> Type the text below and press enter when done. The screen will not change until you press enter. When you have 100% accuracy, you will receive a unit passed code below. Save that code and send all codes to your instructor when you have completed all lessons</h6>');
     $('body').prepend("<h2 id='les'></h2>")
     $('body').prepend('<h3>'+f+' '+l+'</h3>');
 
@@ -740,7 +741,9 @@ function setup()
 }
 function next()
 {
-    x = x + 1;
+    if(x<secret.length){
+        x = x + 1;
+    }
     reset(); 
 }
 function reset()
