@@ -1,0 +1,17 @@
+a{
+    border-style: solid;
+    padding:5px;
+}
+body{
+    text-align: center;
+}
+.codes{
+    text-align:left;
+}
+ul{
+    text-align:left;
+}
+#lesson{
+    border-style:solid;
+    padding:10px;
+}
