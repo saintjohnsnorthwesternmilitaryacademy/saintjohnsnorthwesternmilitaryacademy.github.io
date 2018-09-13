@@ -6,7 +6,8 @@ function p(x,y)
 var secret = 
 [
     "",
-    "the of and to a in you for or it as be on with can have this by not but",
+"Hello and welcome to the typing trainer type this line correctly and slowly then press enter to begin",
+"the the of of of and and and to to to a a a in in in you for or it as be on with can have this by not but",
 "at from I they more will if some there what about which when one all also how many do most",
 "people other time so we may like use into than up out who make because such through get work even",
 "no new film just only see good water need should very any history often way well art know then first",
@@ -45,19 +46,18 @@ var secret =
 "length magazine maybe newspaper nice prefer prevent rich save self soon stand warm young ahead beauty brush cell couple debate",
 "discover ensure exit expect fail front function heavy invest lack lake lead listen member message plant plastic reduce scene serious",
 "speak spot summer taste theme track wing worry appear brain button click concept correct customer death desire explain explore express",
-"foot gas handle huge influence involve lose meet mood notice rain rare release sell slow technical typical upon wall woman",
 ];
 var x = 1;
 var t=100;
 var typed;
 $( document ).ready(function() {
- 
+ reset();
   
 });
 function k()
 {
     var r = ha();
-    $("#codes").append("<li>"+x+")"+r.substring(r.length-6,r.length)+"</li>");
+    $("#codes").append("<tr><td>"+x+ "</td><td>"+r.substring(r.length-6,r.length)+"</td></tr>");
 }
 function getPassCode()
 {
@@ -78,16 +78,30 @@ function getPassCode()
 
 
 
+
+
 $( "body" ).keypress(function( event ) {
+  if(running==true){
   if ((event.which >= 65 && event.which <= 90) ||
       (event.which >= 97 && event.which <= 122) ||
       (event.which >= 48 && event.which <= 57) ||
       (event.which == 32)){		
       typed = typed + String.fromCharCode(event.which);
+      $("#arrow").append(secret[x][typed.length-1]);
+      $("body").removeClass("punish");
+      $("body").removeClass("praise");
+      if(String.fromCharCode(event.which) != secret[x][typed.length-1])
+      {
+          punish();
+      }
       
   }
   else if (event.which == 13){
-  		$("#typed").text(typed);
+       if( $("#percent").text()=="percent=100")
+       {
+           next();
+       }
+  		$("#typed").text("you typed "+typed);
         var missed = levenshtein(secret[x],typed)
         
         secret[x].length - typed.length;
@@ -95,18 +109,24 @@ $( "body" ).keypress(function( event ) {
         var hit = secret[x].length - missed;
         var percent = 100*(hit / secret[x].length);
 
-    
+        if(percent > 70){
         $("#missed").text("missed="+missed);
         $("#hit").text("hit="+hit);
         $("#percent").text("percent="+percent);
+        }
+        else{
+            $("#missed").text("Try again and slow down");
+        }
         if(p(percent,t)){
            k();
+           send();
         }
         }
   
   if ( event.which == 13 ) {
      event.preventDefault();
   }
+}
 });
 var f="lesson";
 var l="plan";
@@ -128,11 +148,21 @@ function code(unit)
   // stringify
   return hex1.toString() + hex2.toString();
 }
-
+function praise()
+{
+    $("#praise").text("Congrats you passed!!! Save the code below as proof");
+    $("body").addClass("praise")
+}
 function page(id)
 {
     x = parseInt(id.substring(1, id.length),10);
     reset();
+}
+function send()
+{
+    
+    praise();
+    
 }
 function md5(string) {
 
@@ -705,39 +735,53 @@ function md5(string) {
 
     return temp.toLowerCase();
 }
-function setup()
+function instruct()
 {
-
-    $('body').append('<div id ="links"></div>');
-    
-    $('body').append('<p class = "jumbotron" id="lesson"></p>');
-    $('body').append('<hr>');
-    $('body').append('<p id="typed"></p>');
-    $('body').append('<hr>');
-    f = $("#firstname").val();
-    $('body').append('<h1 id="missed"></h1>');
-    $('body').append('<br>');
-    $('body').append('<h1 id="hit"></h1>');
-    $('body').append('<br>');
-    $('body').append('<h1 id="percent"></h1>');
-    l =   $("#lastname").val();
-    
-    $('body').append('<button onclick="next()">next</button>');
-    $('body').append('<button onclick="reset()">redo</button>');
-    $('body').prepend('<h6><i>Hint:</i> Type the text below and press enter when done. The screen will not change until you press enter. When you have 100% accuracy, you will receive a unit passed code below. Save that code and send all codes to your instructor when you have completed all lessons</h6>');
-    $('body').prepend("<h2 id='les'></h2>")
-    $('body').prepend('<h3>'+f+' '+l+'</h3>');
-
-    
-    for(var page = 1;page<secret.length;page++)
-    {
-        $( "div" ).append("<a href=\"javascript:void(0)\" class='pages' onclick=\"page(this.id);\" id=a"+page+" >"+page+"</a>");
-    }
+    $('body').append('<h1 id="instruction" class="typewriter align-middle">Just type the words in the box.</h1>');
     $( "#firstname" ).remove();
     $( "#lastname" ).remove();
     $( '#login').remove();
-    $('body').append('<ul id="codes"></ul>');
-    reset();
+    
+    
+}
+
+function setup(fir,las)
+{
+
+
+        $( '#instruction').remove();
+
+        $('body').append('<div id ="links"></div>');
+        $('body').append('<div class = "jumbotron" id="bigbox"></div>');
+        
+        $('#bigbox').append('<p class = "" id="lesson"></p>');
+        $('#bigbox').append('<p class = "" id="arrow"></p>');
+        $('body').append('<div id="praise"></div>')
+        
+        $('body').append('<p id="typed"></p>');
+        $('body').append('<hr>');
+        $('body').append('<h1 id="missed"></h1>');
+        $('body').append('<br>');
+        $('body').append('<h1 id="hit"></h1>');
+        $('body').append('<br>');
+        $('body').append('<h1 id="percent"></h1>');
+        //$('body').append('<button onclick="next()">next</button>');// remove next button
+        $('body').append('<button onclick="reset()">redo</button>');
+        $('body').prepend("<h2 id='les'></h2>")
+        $('body').prepend('<h3>'+fir+' '+las+'</h3>');
+
+        
+        for(var page = 1;page<secret.length;page++)
+        {
+            $( "#links" ).append("<a href=\"javascript:void(0)\" class='pages' onclick=\"page(this.id);\" id=a"+page+" >"+page+"</a>");
+        }
+        $('body').append('<div id="codebox"></div>');
+
+        $('#codebox').append('<table id="codes"></table>');
+        $('#codes').append("<tr><th></th><th>Completed Codes</th></tr>");
+    
+        reset();
+    
 }
 function next()
 {
@@ -746,11 +790,15 @@ function next()
     }
     reset(); 
 }
+var running=false;
 function reset()
 {
     typed = "";
     $("#les").text("Lesson)"+x);
-    $("#lesson").text(secret[x]);
+    $("#lesson").text("");
+  
+    $("#lesson").append(secret[x] + "    <b style='border-style:solid'>↓enter↓</b>");
+    $("#arrow").text("");
     $("#typed").text("");
     $("#missed").text("");
     $("#hit").text("");
@@ -758,7 +806,18 @@ function reset()
 }
 function concat()
 {
-    setup();
+    l =   $("#lastname").val().toLowerCase();
+    l = l[0].toUpperCase() + l.substring(1,l.length);
+    running = true;
+    f = $("#firstname").val().toLowerCase();
+    f = f[0].toUpperCase() + f.substring(1,f.length);
+    instruct();
+    //setTimeout( instruct(),1000);
+    
+    setTimeout(setup        
+    , 4000
+    ,f,l);
+
 }
 function ha()
 {
@@ -782,6 +841,10 @@ function dziemba_levenshtein(a, b){
 		}
 	}
 	return res;
+}
+function punish()
+{
+    $("body").addClass("punish");
 }
 
 function levenshtein(a, b) {

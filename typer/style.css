@@ -7,22 +7,81 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding:20px;
 }
-.codes{
-    text-align:left;
-    
-}
 
-ul{
-    text-align:left;
+#code{
+    text-align:center;
 }
-
 p{
     font-size:24px;
 }
-#lesson{
+table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+td,th{
+    border-style:solid;
+}
+
+
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+#bigbox{
     border-style:solid;
     margin:10px;
+    padding:10px;
+    text-align:left;
 }
-h6{
- 
+#praise{
+    font-size:16pt;
+}
+.punish{
+    background-color: white;
+    animation-name: punish;
+    animation-duration: 1s;
+}
+.praise{
+    background-color: white;
+    animation-name: praise;
+    animation-duration: 3s; 
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+@keyframes punish {
+    /* You could think of as "step 1" */
+    0% {
+      background: white;
+    }
+    /* You could think of as "step 2" */
+    50% {
+      background: red;
+    }
+    100% {
+        background: white;
+      }
+}
+@keyframes praise {
+    /* You could think of as "step 1" */
+    0% {
+      background: white;
+    }
+    /* You could think of as "step 2" */
+    50% {
+      background: green;
+    }
+    100% {
+        background: white;
+      }
 }
