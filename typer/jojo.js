@@ -53,6 +53,8 @@ var typed;
 $( document ).ready(function() {
  reset();
   
+
+ 
 });
 function k()
 {
@@ -101,7 +103,7 @@ $( "body" ).keypress(function( event ) {
        {
            next();
        }
-  		$("#typed").text("you typed "+typed);
+  		$("#typed").text("you typed: "+typed);
         var missed = levenshtein(secret[x],typed)
         
         secret[x].length - typed.length;
@@ -129,6 +131,11 @@ $( "body" ).keypress(function( event ) {
 }
 });
 var f="lesson";
+
+
+
+
+
 var l="plan";
 
 function code(unit)
@@ -765,8 +772,8 @@ function setup(fir,las)
         $('body').append('<h1 id="hit"></h1>');
         $('body').append('<br>');
         $('body').append('<h1 id="percent"></h1>');
-        //$('body').append('<button onclick="next()">next</button>');// remove next button
-        $('body').append('<button onclick="reset()">redo</button>');
+
+        $('body').append('<div id="reset" class="btn btn-default btn-lg" >Start from scratch</div>');
         $('body').prepend("<h2 id='les'></h2>")
         $('body').prepend('<h3>'+fir+' '+las+'</h3>');
 
@@ -779,7 +786,10 @@ function setup(fir,las)
 
         $('#codebox').append('<table id="codes"></table>');
         $('#codes').append("<tr><th></th><th>Completed Codes</th></tr>");
-    
+        
+        $('#reset').on('click', function (e) {
+            reset();
+        })
         reset();
     
 }
