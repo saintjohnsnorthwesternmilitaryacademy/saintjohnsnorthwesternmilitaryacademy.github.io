@@ -14,6 +14,13 @@ var secret =
 "would money each over world map find where much take two want important family example while he look before help",
 "between go own however business great another health same study why few game might think free too right still system",
 "after best must life since could now during learn around form meat air day place become number public read keep",
+"You are walking in the woods There is no one around and your phone is dead Out of the corner of your eye, you spot him Shia LaBeouf",
+"He's following you about thirty feet back He gets down on all fours and breaks into a sprint He's gaining on you Shia LaBeouf", 
+"You are looking for your car but you're all turned around He's almost upon you now, and you can see there's blood on his face My God there is blood everywhere",
+"Running for your life from Shia Labeouf He's brandishing a knife, it's Shia Labeouf Lurking in the shadows Hollywood superstar Shia Labeouf",
+"Living in the woods, Shia Labeouf Killing for sport, Shia Labeouf Eating all the bodies Actual cannibal Shia Labeouf",
+"Now it's dark and you seem to have lost him But you're hopelessly lost yourself Stranded with a murderer You creep silently through the underbrush",
+"Aha In the distance A small cottage with a light on Hope You move stealthily toward it But your leg! AH! It's caught in a bear trap!",
 "part start year every field large once available down give fish human both local sure without come back general process",
 "she heat specific enough long lot hand popular small though experience include job music person really although thank book early",
 "end method never less play able data feel high off point type whether food here home certain economy little theory",
@@ -46,6 +53,7 @@ var secret =
 "length magazine maybe newspaper nice prefer prevent rich save self soon stand warm young ahead beauty brush cell couple debate",
 "discover ensure exit expect fail front function heavy invest lack lake lead listen member message plant plastic reduce scene serious",
 "speak spot summer taste theme track wing worry appear brain button click concept correct customer death desire explain explore express",
+
 ];
 var x = 1;
 var t=100;
@@ -782,12 +790,12 @@ function setup(fir,las)
         {
             $( "#links" ).append("<a href=\"javascript:void(0)\" class='pages' onclick=\"page(this.id);\" id=a"+page+" >"+page+"</a>");
         }
-        $('body').append('<div id="collapse" class="btn btn-default btn-lg" >Show/Hide Codes</div>');
+        $('body').append('<div id="collapse" class="space btn btn-default btn-lg" >Show/Hide Codes</div>');
         
         $('#collapse').click(function(){
             $('#codebox').slideToggle('slow');
         });
-        
+
         $('body').append('<div id="codebox"class = "collapsable" ></div>');
         
         $('#codebox').append('<table id="codes" ></table>');
