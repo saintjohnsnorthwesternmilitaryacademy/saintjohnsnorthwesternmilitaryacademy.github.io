@@ -768,9 +768,9 @@ function setup(fir,las)
         $('body').append('<p id="typed"></p>');
         $('body').append('<hr>');
         $('body').append('<h1 id="missed"></h1>');
-        $('body').append('<br>');
+       // $('body').append('<br>');
         $('body').append('<h1 id="hit"></h1>');
-        $('body').append('<br>');
+       // $('body').append('<br>');
         $('body').append('<h1 id="percent"></h1>');
 
         $('body').append('<div id="reset" class="btn btn-default btn-lg" >Start from scratch</div>');
@@ -782,9 +782,15 @@ function setup(fir,las)
         {
             $( "#links" ).append("<a href=\"javascript:void(0)\" class='pages' onclick=\"page(this.id);\" id=a"+page+" >"+page+"</a>");
         }
-        $('body').append('<div id="codebox"></div>');
-
-        $('#codebox').append('<table id="codes"></table>');
+        $('body').append('<div id="collapse" class="btn btn-default btn-lg" >Show/Hide Codes</div>');
+        
+        $('#collapse').click(function(){
+            $('#codebox').slideToggle('slow');
+        });
+        
+        $('body').append('<div id="codebox"class = "collapsable" ></div>');
+        
+        $('#codebox').append('<table id="codes" ></table>');
         $('#codes').append("<tr><th></th><th>Completed Codes</th></tr>");
         
         $('#reset').on('click', function (e) {
@@ -804,15 +810,16 @@ var running=false;
 function reset()
 {
     typed = "";
-    $("#les").text("Lesson)"+x);
+    $("#les").text("Lesson "+x);
     $("#lesson").text("");
   
-    $("#lesson").append(secret[x] + "    <b style='border-style:solid'>↓enter↓</b>");
+    $("#lesson").append(secret[x] + "   <b style='border-style:solid'>↓enter↓</b>");
     $("#arrow").text("");
     $("#typed").text("");
     $("#missed").text("");
     $("#hit").text("");
     $("#percent").text("");
+    $("#praise").text("");
 }
 function concat()
 {

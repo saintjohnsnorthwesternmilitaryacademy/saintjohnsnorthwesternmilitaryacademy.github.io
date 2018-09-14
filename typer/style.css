@@ -54,6 +54,21 @@ td,th{
     animation-name: praise;
     animation-duration: 3s; 
 }
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+#instruction{
+    margin-top:100px;
+}
+
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
